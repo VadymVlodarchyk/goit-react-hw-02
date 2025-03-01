@@ -1,0 +1,13 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.no-feedback {
+  font-size: 18px;
+  color: gray;
+  text-align: center;
+  margin-top: 20px;
+}
