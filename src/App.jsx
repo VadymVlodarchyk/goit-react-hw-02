@@ -30,7 +30,7 @@ const App = () => {
   const positiveFeedback = totalFeedback
     ? Math.round((feedback.good / totalFeedback) * 100)
     : 0;
-
+// ?
   return (
     <div className="container">
       <Description />
