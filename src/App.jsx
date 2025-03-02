@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Description from "./components/Description/Description";
 import Options from "./components/Options/Options";
 import Feedback from "./components/Feedback/Feedback";
+import Notification from "./components/Notification/Notification"; // Додаємо Notification
 import "./App.css";
 
 const App = () => {
@@ -33,9 +34,9 @@ const App = () => {
   return (
     <div className="container">
       <Description />
-      <Options updateFeedback={updateFeedback} resetFeedback={resetFeedback} />
+      <Options updateFeedback={updateFeedback} resetFeedback={resetFeedback} totalFeedback={totalFeedback} />
       {totalFeedback === 0 ? (
-        <p className="no-feedback">No feedback yet</p>
+        <Notification message="No feedback yet" />
       ) : (
         <Feedback feedback={feedback} totalFeedback={totalFeedback} positiveFeedback={positiveFeedback} />
       )}
